@@ -87,3 +87,6 @@ def parameterLists(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,at
 						dihedralList.append(j)
 					indexDihedralList=dihedralList.index(j)
 					i.append(indexDihedralList)
+					flag=1
+		if(flag==0):
+			print("could not find "+str(dihedralType1)+ " aid1="+str(i[0])+" aid2="+str(i[1])+" aid3="+str(i[2])+" aid4="+str(i[3]))
