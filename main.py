@@ -4,10 +4,9 @@ import functions
 import output
 
 ##  Input parameters
-fileName="angiotensinII2+.pdb"  # file name
+fileName="aminoAcid/alanineRESP"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-q=2     # net charge
-outputName="angiotensinII2+"
+outputName="alanine"
 
 ##  Read potential file
 Atoms=[]
@@ -23,11 +22,13 @@ reader.readDihedral(dihedralParams)
 
 ##  Read atom file (only PDB 8/23/2022)
 atoms=[]
+atomPSF=[]
 bonds=[]
 bondUniq=[]
 angles=[]
 dihedrals=[]
-reader.readPDBfile(atoms,bonds,bondUniq,angles,dihedrals,fileName)
+reader.readPDBfile(atoms,fileName+".pdb")
+reader.readPSFfile(atomPSF,bonds,angles,dihedrals,fileName+".psf")
 
 ##  Create each list
 atomList=[]
@@ -35,10 +36,9 @@ LJList=[]
 bondList=[]
 angleList=[]
 dihedralList=[]
-functions.parameterLists(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,bonds,bondUniq,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList)
+functions.parameterLists(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,atomPSF,bonds,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList)
 
 
-qeach=q/float(len(atoms))
-output.outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,bonds,bondUniq,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList,L,q,qeach,outputName)
+output.outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,atomPSF,bonds,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList,L,outputName)
 
 print("**Done")
