@@ -1,0 +1,56 @@
+PSF
+
+       1 !NTITLE
+ REMARKS FILENAME=
+
+      11 !NATOM
+       1 MAIN 1    GLY  N    n4        -0.359175   14.0067           0
+       2 MAIN 1    GLY  CA   c3         0.023218   12.0107           0
+       3 MAIN 1    GLY  H1   hn         0.336897    1.0079           0
+       4 MAIN 1    GLY  H2   hn         0.336897    1.0079           0
+       5 MAIN 1    GLY  C    c          0.729180   12.0107           0
+       6 MAIN 1    GLY  O    oh        -0.619242   15.9994           0
+       7 MAIN 1    GLY  HA1  hx         0.127514    1.0079           0
+       8 MAIN 1    GLY  HA2  hx         0.127514    1.0079           0
+       9 MAIN 1    GLY  OXT  o         -0.547209   15.9994           0
+      10 MAIN 1    GLY  H3   hn         0.336897    1.0079           0
+      11 MAIN 1    GLY  H    ho         0.507511    1.0079           0
+
+      10 !NBOND: bonds
+       1       2       1       3       1       4       1      10
+       2       5       2       7       2       8       5       6
+       5       9       6      11
+
+      16 !NTHETA: angles
+       3       1       2       4       1       2       4       1       3
+      10       1       2      10       1       3      10       1       4
+       5       2       1       7       2       1       7       2       5
+       8       2       1       8       2       5       8       2       7
+       6       5       2       9       5       2       9       5       6
+      11       6       5
+
+      17 !NPHI: dihedrals
+       5       2       1       3       5       2       1       4
+       5       2       1      10       7       2       1       3
+       7       2       1       4       7       2       1      10
+       8       2       1       3       8       2       1       4
+       8       2       1      10       6       5       2       1
+       6       5       2       7       6       5       2       8
+       9       5       2       1       9       5       2       7
+       9       5       2       8      11       6       5       2
+      11       6       5       9
+
+       0 !NIMPHI: impropers
+
+       0 !NDON: donors
+
+       0 !NACC: acceptors
+
+       0 !NNB: non-bonding exclusions
+
+       0       0       0       0       0       0       0       0
+       0       0       0
+
+       1 !NGRP: groups
+       0       0       0
+

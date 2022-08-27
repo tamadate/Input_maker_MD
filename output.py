@@ -1,10 +1,10 @@
 import numpy as np
 
-def outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,bonds,bondUniq,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList,L,q,qeach,fileName):
+def outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,atomsPSF,bonds,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList,L,fileName):
 	with open(fileName+".lam", "w") as f:
 		f.write("\n")
 		f.write(str(len(atoms))+"\tatoms\n")
-		f.write(str(len(bondUniq))+"\tbonds\n")
+		f.write(str(len(bonds))+"\tbonds\n")
 		f.write(str(len(angles))+"\tangles\n")
 		f.write(str(len(dihedrals))+"\tdihedrals\n\n")
 		f.write(str(len(atomList))+"\tatom types\n")
@@ -34,10 +34,10 @@ def outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,bo
 			f.write("\t#"+str(dihedralList[i][0])+"\n")
 		f.write("\n\n\n\nAtoms\n\n")
 		for i in np.arange(len(atoms)):
-			f.write(str(i+1)+"\t"+str(int(1))+"\t"+str(int(atoms[i][4]+1))+"\t"+str(qeach)+"\t"+str(atoms[i][1])+"\t"+str(atoms[i][2])+"\t"+str(atoms[i][3])+"\n")
+			f.write(str(i+1)+"\t"+str(int(1))+"\t"+str(int(atomsPSF[i][2]+1))+"\t"+str(atomsPSF[i][1])+"\t"+str(atoms[i][0])+"\t"+str(atoms[i][1])+"\t"+str(atoms[i][2])+"\n")
 		f.write("\n\nBonds\n\n")
-		for i in np.arange(len(bondUniq)):
-			f.write(str(i+1)+"\t"+str(bondUniq[i][2]+1)+"\t"+str(bondUniq[i][0]+1)+"\t"+str(bondUniq[i][1]+1)+"\n")
+		for i in np.arange(len(bonds)):
+			f.write(str(i+1)+"\t"+str(bonds[i][2]+1)+"\t"+str(bonds[i][0]+1)+"\t"+str(bonds[i][1]+1)+"\n")
 		f.write("\n\nAngles\n\n")
 		for i in np.arange(len(angles)):
 			f.write(str(i+1)+"\t"+str(angles[i][3]+1)+"\t"+str(angles[i][0]+1)+"\t"+str(angles[i][1]+1)+"\t"+str(angles[i][2]+1)+"\n")
@@ -95,10 +95,10 @@ def outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,bo
 			f.write("\n")
 		f.write("\natoms\n")
 		for i in np.arange(len(atoms)):
-			f.write(str(i+1)+"\t"+str(int(atoms[i][4]+Nmyatom+1))+"\t"+str(qeach)+"\t"+str(atoms[i][1])+"\t"+str(atoms[i][2])+"\t"+str(atoms[i][3])+"\n")
+			f.write(str(i+1)+"\t"+str(int(atomsPSF[i][2]+Nmyatom+1))+"\t"+str(atomsPSF[i][1])+"\t"+str(atoms[i][0])+"\t"+str(atoms[i][1])+"\t"+str(atoms[i][2])+"\n")
 		f.write("\nbonds\n")
-		for i in np.arange(len(bondUniq)):
-			f.write(str(bondUniq[i][0]+1)+"\t"+str(bondUniq[i][1]+1)+"\t"+str(bondUniq[i][2]+4)+"\n")
+		for i in np.arange(len(bonds)):
+			f.write(str(bonds[i][0]+1)+"\t"+str(bonds[i][1]+1)+"\t"+str(bonds[i][2]+4)+"\n")
 		f.write("\nangles\n")
 		for i in np.arange(len(angles)):
 			f.write(str(angles[i][0]+1)+"\t"+str(angles[i][1]+1)+"\t"+str(angles[i][2]+1)+"\t"+str(angles[i][3]+4)+"\n")
