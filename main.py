@@ -4,9 +4,9 @@ import functions
 import output
 
 ##  Input parameters
-fileName="aminoAcid/alanineRESP"  # file name
+fileName="aminoAcid/tryptophanRESP"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-outputName="alanine"
+outputName="tryptophan"
 
 ##  Read potential file
 Atoms=[]
