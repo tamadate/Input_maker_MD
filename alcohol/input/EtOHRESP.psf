@@ -4,15 +4,15 @@ PSF
  REMARKS FILENAME=
 
        9 !NATOM
-       1 MAIN 1    UNL  C    C         -0.125394   12.0107           0
-       2 MAIN 1    UNL  C    C          0.347898   12.0107           0
-       3 MAIN 1    UNL  H    H          0.038532    1.0079           0
-       4 MAIN 1    UNL  H    H          0.038532    1.0079           0
-       5 MAIN 1    UNL  H    H          0.038532    1.0079           0
-       6 MAIN 1    UNL  O    O         -0.693469   15.9994           0
-       7 MAIN 1    UNL  H    H          0.414867    1.0079           0
-       8 MAIN 1    UNL  H    H         -0.029749    1.0079           0
-       9 MAIN 1    UNL  H    H         -0.029749    1.0079           0
+       1 MAIN 1    UNL  C    c3        -0.125394   12.0107           0
+       2 MAIN 1    UNL  C    c3         0.347898   12.0107           0
+       3 MAIN 1    UNL  H    hc         0.038532    1.0079           0
+       4 MAIN 1    UNL  H    hc         0.038532    1.0079           0
+       5 MAIN 1    UNL  H    hc         0.038532    1.0079           0
+       6 MAIN 1    UNL  O    oh        -0.693469   15.9994           0
+       7 MAIN 1    UNL  H    ho         0.414867    1.0079           0
+       8 MAIN 1    UNL  H    h1        -0.029749    1.0079           0
+       9 MAIN 1    UNL  H    h1        -0.029749    1.0079           0
 
        8 !NBOND: bonds
        1       2       1       3       1       4       1       5
@@ -33,11 +33,7 @@ PSF
        9       2       1       5       7       6       2       1
        7       6       2       8       7       6       2       9
 
-       8 !NIMPHI: impropers
-       2       3       1       4       2       3       1       5
-       2       4       1       5       3       4       1       5
-       1       6       2       8       1       6       2       9
-       1       8       2       9       6       8       2       9
+       0 !NIMPHI: impropers
 
        0 !NDON: donors
 
