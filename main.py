@@ -4,7 +4,7 @@ import functions
 import output
 
 ##  Input parameters
-fileName="alcohol/input/MeOHRESP"  # file name
+fileName="aminoAcid/input/valineRESP"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
 outputName="MeOH"
 
