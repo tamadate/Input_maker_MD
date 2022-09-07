@@ -76,10 +76,10 @@ def outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,at
 			f.write(str(i+1)+"\t"+str(int(atomsPSF[i][2]+1))+"\t"+str(atomsPSF[i][1])+"\t"+str(atoms[i][0])+"\t"+str(atoms[i][1])+"\t"+str(atoms[i][2])+"\n")
 		f.write("\nbonds\n")
 		for i in np.arange(len(bonds)):
-			f.write(str(bonds[i][0]+1)+"\t"+str(bonds[i][1]+1)+"\t"+str(bonds[i][2]+4)+"\n")
+			f.write(str(bonds[i][0]+1)+"\t"+str(bonds[i][1]+1)+"\t"+str(bonds[i][2]+1)+"\n")
 		f.write("\nangles\n")
 		for i in np.arange(len(angles)):
-			f.write(str(angles[i][0]+1)+"\t"+str(angles[i][1]+1)+"\t"+str(angles[i][2]+1)+"\t"+str(angles[i][3]+4)+"\n")
+			f.write(str(angles[i][0]+1)+"\t"+str(angles[i][1]+1)+"\t"+str(angles[i][2]+1)+"\t"+str(angles[i][3]+1)+"\n")
 		f.write("\ndihedrals\n")
 		for i in np.arange(len(dihedrals)):
-			f.write(str(dihedrals[i][0]+1)+"\t"+str(dihedrals[i][1]+1)+"\t"+str(dihedrals[i][2]+1)+"\t"+str(dihedrals[i][3]+1)+"\t"+str(dihedrals[i][4]+2)+"\t"+"\n")
+			f.write(str(dihedrals[i][0]+1)+"\t"+str(dihedrals[i][1]+1)+"\t"+str(dihedrals[i][2]+1)+"\t"+str(dihedrals[i][3]+1)+"\t"+str(dihedrals[i][4]+1)+"\t"+"\n")

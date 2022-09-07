@@ -4,9 +4,9 @@ import functions
 import output
 
 ##  Input parameters
-fileName="aminoAcid/input/valineRESP"  # file name
+fileName="alcohol/input/EtOHRESP"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-outputName="MeOH"
+outputName="EtOH"
 
 ##  Read potential file
 Atoms=[]
