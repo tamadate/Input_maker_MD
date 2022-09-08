@@ -4,9 +4,9 @@ import functions
 import output
 
 ##  Input parameters
-fileName="alcohol/input/EtOHRESP"  # file name
+fileName="alcohol/input/1-BuOHRESP"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-outputName="EtOH"
+outputName="1-BuOH"
 
 ##  Read potential file
 Atoms=[]
