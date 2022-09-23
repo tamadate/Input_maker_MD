@@ -4,9 +4,9 @@ import functions
 import output
 
 ##  Input parameters
-fileName="alcohol/input/1-BuOHRESP"  # file name
+fileName="protein/angiotensinII+2"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-outputName="1-BuOH"
+outputName="angioII+2"
 
 ##  Read potential file
 Atoms=[]

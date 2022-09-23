@@ -50,7 +50,10 @@ def readPDBfile(atoms,fileName):
 	for line in file_data:
 		s=line.split()
 		if(s[0]=="HETATM" or s[0]=="ATOM"):
-			atoms.append([float(s[5]),float(s[6]),float(s[7])])
+			if(np.size(s)==12):
+				atoms.append([float(s[5]),float(s[6]),float(s[7])])
+			if(np.size(s)==11):
+				atoms.append([float(s[4]),float(s[5]),float(s[6])])
 
 
 def readPSFfile(atomPSF,bonds,angles,dihedrals,fileName):
@@ -79,7 +82,10 @@ def readPSFfile(atomPSF,bonds,angles,dihedrals,fileName):
 			Nthings=int(s[0])
 			continue
 		if(flag==1):
-			atomPSF.append([s[5],float(s[6])])
+			if(np.size(s)==9):
+				atomPSF.append([s[5],float(s[6])])
+			if(np.size(s)==8):
+				atomPSF.append([s[4],float(s[5])])
 		if(flag==2):
 			for loop in np.arange(4):
 				bonds.append([int(s[2*loop])-1,int(s[2*loop+1])-1])
