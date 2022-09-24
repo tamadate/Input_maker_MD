@@ -83,3 +83,12 @@ def outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,at
 		f.write("\ndihedrals\n")
 		for i in np.arange(len(dihedrals)):
 			f.write(str(dihedrals[i][0]+1)+"\t"+str(dihedrals[i][1]+1)+"\t"+str(dihedrals[i][2]+1)+"\t"+str(dihedrals[i][3]+1)+"\t"+str(dihedrals[i][4]+1)+"\t"+"\n")
+
+def outputLocationFile(atomPSF,HDX_locations,fileName):
+	aPSF=np.array(atomPSF)
+	with open(fileName+".loc", "w") as f:
+		for locType in HDX_locations:
+			locs=np.where(aPSF.T[0]==locType)
+			for loc in locs:
+				for l in loc:
+					f.write(str(l)+"\n")

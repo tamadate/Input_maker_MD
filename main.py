@@ -4,9 +4,11 @@ import functions
 import output
 
 ##  Input parameters
-fileName="alcohol/input/1-BuOHRESP"  # file name
+fileName="protein/angiotensinII+1"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-outputName="1-BuOH"
+outputName="angioII+1"
+chargeFile="/home/tama3rdgen/ChargeCalculation/angio1+/a.dump"
+HDX_locations=np.array(["hn","ho"])
 
 ##  Read potential file
 Atoms=[]
@@ -29,6 +31,8 @@ angles=[]
 dihedrals=[]
 reader.readPDBfile(atoms,fileName+".pdb")
 reader.readPSFfile(atomPSF,bonds,angles,dihedrals,fileName+".psf")
+if(chargeFile!="psf"):
+    reader.readDumpFile(atomPSF,chargeFile)
 
 ##  Create each list
 atomList=[]
@@ -38,7 +42,9 @@ angleList=[]
 dihedralList=[]
 functions.parameterLists(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,atomPSF,bonds,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList)
 
-
 output.outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,atomPSF,bonds,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList,L,outputName)
+if(np.size(HDX_locations)>0):
+    output.outputLocationFile(atomPSF,HDX_locations,outputName)
+
 
 print("**Done")

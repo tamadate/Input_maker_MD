@@ -50,7 +50,10 @@ def readPDBfile(atoms,fileName):
 	for line in file_data:
 		s=line.split()
 		if(s[0]=="HETATM" or s[0]=="ATOM"):
-			atoms.append([float(s[5]),float(s[6]),float(s[7])])
+			if(np.size(s)==12):
+				atoms.append([float(s[5]),float(s[6]),float(s[7])])
+			if(np.size(s)==11):
+				atoms.append([float(s[4]),float(s[5]),float(s[6])])
 
 
 def readPSFfile(atomPSF,bonds,angles,dihedrals,fileName):
@@ -79,7 +82,10 @@ def readPSFfile(atomPSF,bonds,angles,dihedrals,fileName):
 			Nthings=int(s[0])
 			continue
 		if(flag==1):
-			atomPSF.append([s[5],float(s[6])])
+			if(np.size(s)==9):
+				atomPSF.append([s[5],float(s[6])])
+			if(np.size(s)==8):
+				atomPSF.append([s[4],float(s[5])])
 		if(flag==2):
 			for loop in np.arange(4):
 				bonds.append([int(s[2*loop])-1,int(s[2*loop+1])-1])
@@ -101,3 +107,15 @@ def readPSFfile(atomPSF,bonds,angles,dihedrals,fileName):
 				if(Nthings==0):
 					flag=0
 					break
+
+
+def readDumpFile(atomPSF,fileName):
+	with open(fileName, "r") as f:
+		file_data = f.readlines()
+	file_data=np.array(file_data)
+	startIDs=np.where(file_data == 'ITEM: TIMESTEP\n')
+	Natom=int(file_data[np.max(startIDs)+3])
+	atoms=file_data[9:Natom+9]
+	for atom in atoms:
+		a=atom.split()
+		atomPSF[int(a[0])-1][1]=a[8]
