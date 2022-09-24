@@ -107,3 +107,15 @@ def readPSFfile(atomPSF,bonds,angles,dihedrals,fileName):
 				if(Nthings==0):
 					flag=0
 					break
+
+
+def readDumpFile(atomPSF,fileName):
+	with open(fileName, "r") as f:
+		file_data = f.readlines()
+	file_data=np.array(file_data)
+	startIDs=np.where(file_data == 'ITEM: TIMESTEP\n')
+	Natom=int(file_data[np.max(startIDs)+3])
+	atoms=file_data[9:Natom+9]
+	for atom in atoms:
+		a=atom.split()
+		atomPSF[int(a[0])-1][1]=a[8]
