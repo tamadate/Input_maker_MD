@@ -1,0 +1,303 @@
+ATOM      1 O    PRO     2       8.520   0.027  -0.395  1.00  0.00      MAINO 0 
+ATOM      2 C    PRO     2       9.146   1.007  -0.037  1.00  0.00      MAINC 0 
+ATOM      3 CA   PRO     2      10.610   1.180  -0.444  1.00  0.00      MAINC 0 
+ATOM      4 HA   PRO     2      11.088   1.923   0.196  1.00  0.00      MAINH 0 
+ATOM      5 CB   PRO     2      10.715   1.649  -1.907  1.00  0.00      MAINC 0 
+ATOM      6 HB1  PRO     2       9.896   1.232  -2.499  1.00  0.00      MAINH 0 
+ATOM      7 HB2  PRO     2      10.692   2.738  -1.992  1.00  0.00      MAINH 0 
+ATOM      8 CG   PRO     2      12.041   1.056  -2.391  1.00  0.00      MAINC 0 
+ATOM      9 HG1  PRO     2      12.051   0.885  -3.470  1.00  0.00      MAINH 0 
+ATOM     10 HG2  PRO     2      12.862   1.728  -2.130  1.00  0.00      MAINH 0 
+ATOM     11 CD   PRO     2      12.166  -0.248  -1.594  1.00  0.00      MAINC 0 
+ATOM     12 HD1  PRO     2      11.717  -1.083  -2.140  1.00  0.00      MAINH 0 
+ATOM     13 HD2  PRO     2      13.220  -0.463  -1.396  1.00  0.00      MAINH 0 
+ATOM     14 N    PRO     2      11.427  -0.044  -0.339  1.00  0.00      MAINN 0 
+ATOM     15 C            1      11.458  -0.851   0.758  1.00  0.00      MAINC 0 
+ATOM     16 CA           1      12.346  -2.089   0.717  1.00  0.00      MAINC 0 
+ATOM     17 HA           1      12.553  -2.347  -0.323  1.00  0.00      MAINH 0 
+ATOM     18 CB           1      13.671  -1.787   1.451  1.00  0.00      MAINC 0 
+ATOM     19 HB1          1      14.030  -0.802   1.144  1.00  0.00      MAINH 0 
+ATOM     20 HB2          1      13.493  -1.742   2.529  1.00  0.00      MAINH 0 
+ATOM     21 CG           1      14.768  -2.825   1.139  1.00  0.00      MAINC 0 
+ATOM     22 HG1          1      14.433  -3.828   1.414  1.00  0.00      MAINH 0 
+ATOM     23 HG2          1      14.968  -2.823   0.064  1.00  0.00      MAINH 0 
+ATOM     24 CD           1      16.054  -2.478   1.913  1.00  0.00      MAINC 0 
+ATOM     25 HD1          1      16.325  -1.432   1.739  1.00  0.00      MAINH 0 
+ATOM     26 HD2          1      15.893  -2.627   2.985  1.00  0.00      MAINH 0 
+ATOM     27 NE           1      17.170  -3.348   1.457  1.00  0.00      MAINN 0 
+ATOM     28 CZ           1      18.147  -3.748   1.137  1.00  0.00      MAINC 0 
+ATOM     29 NH1          1      18.573  -3.194   0.283  1.00  0.00      MAINN 0 
+ATOM     30 HH11         1      17.987  -2.490  -0.166  1.00  0.00      MAINH 0 
+ATOM     31 HH12         1      19.470  -3.139  -0.203  1.00  0.00      MAINH 0 
+ATOM     32 NH2          1      18.188  -4.581   1.860  1.00  0.00      MAINN 0 
+ATOM     33 HH21         1      17.732  -5.369   1.370  1.00  0.00      MAINH 0 
+ATOM     34 HH22         1      19.206  -4.755   1.842  1.00  0.00      MAINH 0 
+ATOM     35 N            1      11.662  -3.240   1.334  1.00  0.00      MAINN 0 
+ATOM     36 H1           1      12.274  -4.051   1.372  1.00  0.00      MAINH 0 
+ATOM     37 H2           1      11.384  -3.010   2.287  1.00  0.00      MAINH 0 
+ATOM     38 O            1      10.942  -0.505   1.803  1.00  0.00      MAINO 0 
+ATOM     39 N    PRO     3       8.552   1.994   0.691  1.00  0.00      MAINN 0 
+ATOM     40 CD   PRO     3       9.221   3.176   1.254  1.00  0.00      MAINC 0 
+ATOM     41 HD1  PRO     3      10.121   2.894   1.809  1.00  0.00      MAINH 0 
+ATOM     42 HD2  PRO     3       9.479   3.859   0.439  1.00  0.00      MAINH 0 
+ATOM     43 CG   PRO     3       8.213   3.840   2.200  1.00  0.00      MAINC 0 
+ATOM     44 HG1  PRO     3       8.332   3.431   3.207  1.00  0.00      MAINH 0 
+ATOM     45 HG2  PRO     3       8.339   4.925   2.242  1.00  0.00      MAINH 0 
+ATOM     46 CB   PRO     3       6.851   3.432   1.634  1.00  0.00      MAINC 0 
+ATOM     47 HB1  PRO     3       6.081   3.383   2.407  1.00  0.00      MAINH 0 
+ATOM     48 HB2  PRO     3       6.544   4.160   0.878  1.00  0.00      MAINH 0 
+ATOM     49 CA   PRO     3       7.104   2.060   0.981  1.00  0.00      MAINC 0 
+ATOM     50 HA   PRO     3       6.874   1.267   1.700  1.00  0.00      MAINH 0 
+ATOM     51 C    PRO     3       6.200   1.871  -0.229  1.00  0.00      MAINC 0 
+ATOM     52 N    GLY     4       4.993   1.327   0.038  1.00  0.00      MAINN 0 
+ATOM     53 H    GLY     4       4.774   1.050   0.983  1.00  0.00      MAINH 0 
+ATOM     54 CA   GLY     4       3.956   1.092  -0.974  1.00  0.00      MAINC 0 
+ATOM     55 HA1  GLY     4       3.932   1.933  -1.673  1.00  0.00      MAINH 0 
+ATOM     56 HA2  GLY     4       4.184   0.175  -1.522  1.00  0.00      MAINH 0 
+ATOM     57 C    GLY     4       2.567   0.947  -0.381  1.00  0.00      MAINC 0 
+ATOM     58 N    PHE     5       1.564   1.023  -1.285  1.00  0.00      MAINN 0 
+ATOM     59 H    PHE     5       1.800   1.104  -2.262  1.00  0.00      MAINH 0 
+ATOM     60 CA   PHE     5       0.129   1.123  -0.959  1.00  0.00      MAINC 0 
+ATOM     61 HA   PHE     5      -0.052   0.616  -0.006  1.00  0.00      MAINH 0 
+ATOM     62 CB   PHE     5      -0.328   2.597  -0.837  1.00  0.00      MAINC 0 
+ATOM     63 HB1  PHE     5      -0.203   3.094  -1.803  1.00  0.00      MAINH 0 
+ATOM     64 HB2  PHE     5      -1.396   2.628  -0.608  1.00  0.00      MAINH 0 
+ATOM     65 CG   PHE     5       0.426   3.367   0.238  1.00  0.00      MAINC 0 
+ATOM     66 CD1  PHE     5       1.517   4.171  -0.102  1.00  0.00      MAINC 0 
+ATOM     67 HD1  PHE     5       1.829   4.260  -1.140  1.00  0.00      MAINH 0 
+ATOM     68 CE1  PHE     5       2.223   4.853   0.887  1.00  0.00      MAINC 0 
+ATOM     69 HE1  PHE     5       3.075   5.473   0.618  1.00  0.00      MAINH 0 
+ATOM     70 CZ   PHE     5       1.839   4.740   2.222  1.00  0.00      MAINC 0 
+ATOM     71 HZ   PHE     5       2.389   5.272   2.994  1.00  0.00      MAINH 0 
+ATOM     72 CE2  PHE     5       0.750   3.942   2.566  1.00  0.00      MAINC 0 
+ATOM     73 HE2  PHE     5       0.452   3.850   3.607  1.00  0.00      MAINH 0 
+ATOM     74 CD2  PHE     5       0.047   3.256   1.577  1.00  0.00      MAINC 0 
+ATOM     75 HD2  PHE     5      -0.796   2.628   1.856  1.00  0.00      MAINH 0 
+ATOM     76 C    PHE     5      -0.713   0.403  -2.003  1.00  0.00      MAINC 0 
+ATOM     77 N    SER     6      -1.975   0.090  -1.627  1.00  0.00      MAINN 0 
+ATOM     78 H    SER     6      -2.288   0.343  -0.702  1.00  0.00      MAINH 0 
+ATOM     79 CA   SER     6      -2.856  -0.820  -2.379  1.00  0.00      MAINC 0 
+ATOM     80 HA   SER     6      -2.634  -0.691  -3.441  1.00  0.00      MAINH 0 
+ATOM     81 CB   SER     6      -2.543  -2.280  -1.982  1.00  0.00      MAINC 0 
+ATOM     82 HB1  SER     6      -3.159  -2.973  -2.555  1.00  0.00      MAINH 0 
+ATOM     83 HB2  SER     6      -1.494  -2.501  -2.196  1.00  0.00      MAINH 0 
+ATOM     84 OG   SER     6      -2.790  -2.483  -0.591  1.00  0.00      MAINO 0 
+ATOM     85 H    SER     6      -3.089  -3.401  -0.482  1.00  0.00      MAINH 0 
+ATOM     86 C    SER     6      -4.344  -0.495  -2.192  1.00  0.00      MAINC 0 
+ATOM     87 N    PRO     7      -5.235  -0.984  -3.106  1.00  0.00      MAINN 0 
+ATOM     88 CD   PRO     7      -4.903  -1.793  -4.294  1.00  0.00      MAINC 0 
+ATOM     89 HD1  PRO     7      -4.056  -1.378  -4.845  1.00  0.00      MAINH 0 
+ATOM     90 HD2  PRO     7      -4.682  -2.816  -3.979  1.00  0.00      MAINH 0 
+ATOM     91 CG   PRO     7      -6.153  -1.808  -5.182  1.00  0.00      MAINC 0 
+ATOM     92 HG1  PRO     7      -6.121  -0.964  -5.874  1.00  0.00      MAINH 0 
+ATOM     93 HG2  PRO     7      -6.242  -2.735  -5.754  1.00  0.00      MAINH 0 
+ATOM     94 CB   PRO     7      -7.301  -1.623  -4.188  1.00  0.00      MAINC 0 
+ATOM     95 HB1  PRO     7      -8.177  -1.163  -4.650  1.00  0.00      MAINH 0 
+ATOM     96 HB2  PRO     7      -7.586  -2.597  -3.781  1.00  0.00      MAINH 0 
+ATOM     97 CA   PRO     7      -6.694  -0.739  -3.084  1.00  0.00      MAINC 0 
+ATOM     98 HA   PRO     7      -6.840   0.310  -3.360  1.00  0.00      MAINH 0 
+ATOM     99 C    PRO     7      -7.406  -0.967  -1.754  1.00  0.00      MAINC 0 
+ATOM    100 N    PHE     8      -8.239   0.032  -1.389  1.00  0.00      MAINN 0 
+ATOM    101 H    PHE     8      -8.286   0.846  -1.981  1.00  0.00      MAINH 0 
+ATOM    102 CA   PHE     8      -9.048   0.077  -0.161  1.00  0.00      MAINC 0 
+ATOM    103 HA   PHE     8      -8.366  -0.062   0.684  1.00  0.00      MAINH 0 
+ATOM    104 C    PHE     8     -10.100  -1.020  -0.090  1.00  0.00      MAINC 0 
+ATOM    105 N    ARG     9      -9.996  -1.849   0.970  1.00  0.00      MAINN 0 
+ATOM    106 H    ARG     9      -9.176  -1.785   1.557  1.00  0.00      MAINH 0 
+ATOM    107 CA   ARG     9     -10.969  -2.894   1.319  1.00  0.00      MAINC 0 
+ATOM    108 HA   ARG     9     -11.474  -3.222   0.406  1.00  0.00      MAINH 0 
+ATOM    109 C    ARG     9     -10.253  -4.113   1.858  1.00  0.00      MAINC 0 
+ATOM    110 O    ARG     9      -9.359  -4.067   2.677  1.00  0.00      MAINO 0 
+ATOM    111 OXT  ARG     9     -10.869  -5.221   1.558  1.00  0.00      MAINO 0 
+ATOM    112 HXT  ARG     9     -10.372  -5.932   1.996  1.00  0.00      MAINH 0 
+ATOM    113 CB   ARG     9     -12.033  -2.423   2.347  1.00  0.00      MAINC 0 
+ATOM    114 HB1  ARG     9     -12.505  -3.305   2.789  1.00  0.00      MAINH 0 
+ATOM    115 HB2  ARG     9     -11.554  -1.877   3.163  1.00  0.00      MAINH 0 
+ATOM    116 CG   ARG     9     -13.138  -1.563   1.694  1.00  0.00      MAINC 0 
+ATOM    117 HG1  ARG     9     -12.720  -0.615   1.349  1.00  0.00      MAINH 0 
+ATOM    118 HG2  ARG     9     -13.524  -2.095   0.821  1.00  0.00      MAINH 0 
+ATOM    119 CD   ARG     9     -14.301  -1.289   2.673  1.00  0.00      MAINC 0 
+ATOM    120 HD1  ARG     9     -14.596  -2.214   3.177  1.00  0.00      MAINH 0 
+ATOM    121 HD2  ARG     9     -13.988  -0.563   3.430  1.00  0.00      MAINH 0 
+ATOM    122 NE   ARG     9     -15.471  -0.755   1.925  1.00  0.00      MAINN 0 
+ATOM    123 CZ   ARG     9     -16.349  -0.532   1.292  1.00  0.00      MAINC 0 
+ATOM    124 NH1  ARG     9     -16.919  -0.840   0.400  1.00  0.00      MAINN 0 
+ATOM    125 HH11 ARG     9     -16.446  -1.754   0.488  1.00  0.00      MAINH 0 
+ATOM    126 HH12 ARG     9     -17.924  -1.010   0.576  1.00  0.00      MAINH 0 
+ATOM    127 NH2  ARG     9     -16.845   0.366   1.697  1.00  0.00      MAINN 0 
+ATOM    128 HH21 ARG     9     -16.144   1.079   1.900  1.00  0.00      MAINH 0 
+ATOM    129 HH22 ARG     9     -17.708   0.709   2.121  1.00  0.00      MAINH 0 
+ATOM    130 O    PHE     8     -11.054  -1.063  -0.844  1.00  0.00      MAINO 0 
+ATOM    131 CB   PHE     8      -9.755   1.441  -0.002  1.00  0.00      MAINC 0 
+ATOM    132 HB1  PHE     8     -10.485   1.569  -0.806  1.00  0.00      MAINH 0 
+ATOM    133 HB2  PHE     8     -10.319   1.444   0.934  1.00  0.00      MAINH 0 
+ATOM    134 CG   PHE     8      -8.790   2.614  -0.007  1.00  0.00      MAINC 0 
+ATOM    135 CD1  PHE     8      -8.584   3.350  -1.176  1.00  0.00      MAINC 0 
+ATOM    136 HD1  PHE     8      -9.110   3.086  -2.091  1.00  0.00      MAINH 0 
+ATOM    137 CE1  PHE     8      -7.704   4.430  -1.178  1.00  0.00      MAINC 0 
+ATOM    138 HE1  PHE     8      -7.546   5.001  -2.090  1.00  0.00      MAINH 0 
+ATOM    139 CZ   PHE     8      -7.026   4.778  -0.012  1.00  0.00      MAINC 0 
+ATOM    140 HZ   PHE     8      -6.340   5.622  -0.013  1.00  0.00      MAINH 0 
+ATOM    141 CE2  PHE     8      -7.226   4.045   1.156  1.00  0.00      MAINC 0 
+ATOM    142 HE2  PHE     8      -6.696   4.316   2.065  1.00  0.00      MAINH 0 
+ATOM    143 CD2  PHE     8      -8.106   2.964   1.158  1.00  0.00      MAINC 0 
+ATOM    144 HD2  PHE     8      -8.255   2.396   2.074  1.00  0.00      MAINH 0 
+ATOM    145 O    PRO     7      -7.280  -1.982  -1.097  1.00  0.00      MAINO 0 
+ATOM    146 O    SER     6      -4.719   0.233  -1.293  1.00  0.00      MAINO 0 
+ATOM    147 O    PHE     5      -0.279   0.095  -3.097  1.00  0.00      MAINO 0 
+ATOM    148 O    GLY     4       2.363   0.837   0.812  1.00  0.00      MAINO 0 
+ATOM    149 O    PRO     3       6.485   2.293  -1.334  1.00  0.00      MAINO 0 
+ATOM    150 HH13 ARG     9     -16.841  -0.568  -0.597  1.00  0.00      MAINH 0 
+ATOM    151 HH23         1      17.898  -4.640   2.852  1.00  0.00      MAINH 0 
+CONECT    1    2
+CONECT    2    1    3   39
+CONECT    3    2    4    5   14
+CONECT    4    3
+CONECT    5    3    6    7    8
+CONECT    6    5
+CONECT    7    5
+CONECT    8    5    9   10   11
+CONECT    9    8
+CONECT   10    8
+CONECT   11    8   12   13   14
+CONECT   12   11
+CONECT   13   11
+CONECT   14    3   11   15
+CONECT   15   14   16   38
+CONECT   16   15   17   18   35
+CONECT   17   16
+CONECT   18   16   19   20   21
+CONECT   19   18
+CONECT   20   18
+CONECT   21   18   22   23   24
+CONECT   22   21
+CONECT   23   21
+CONECT   24   21   25   26   27
+CONECT   25   24
+CONECT   26   24
+CONECT   27   24   28
+CONECT   28   27   29   32
+CONECT   29   28   30   31
+CONECT   30   29
+CONECT   31   29
+CONECT   32   28   33   34  151
+CONECT   33   32
+CONECT   34   32
+CONECT   35   16   36   37
+CONECT   36   35
+CONECT   37   35
+CONECT   38   15
+CONECT   39    2   40   49
+CONECT   40   39   41   42   43
+CONECT   41   40
+CONECT   42   40
+CONECT   43   40   44   45   46
+CONECT   44   43
+CONECT   45   43
+CONECT   46   43   47   48   49
+CONECT   47   46
+CONECT   48   46
+CONECT   49   39   46   50   51
+CONECT   50   49
+CONECT   51   49   52  149
+CONECT   52   51   53   54
+CONECT   53   52
+CONECT   54   52   55   56   57
+CONECT   55   54
+CONECT   56   54
+CONECT   57   54   58  148
+CONECT   58   57   59   60
+CONECT   59   58
+CONECT   60   58   61   62   76
+CONECT   61   60
+CONECT   62   60   63   64   65
+CONECT   63   62
+CONECT   64   62
+CONECT   65   62   66   74
+CONECT   66   65   67   68
+CONECT   67   66
+CONECT   68   66   69   70
+CONECT   69   68
+CONECT   70   68   71   72
+CONECT   71   70
+CONECT   72   70   73   74
+CONECT   73   72
+CONECT   74   65   72   75
+CONECT   75   74
+CONECT   76   60   77  147
+CONECT   77   76   78   79
+CONECT   78   77
+CONECT   79   77   80   81   86
+CONECT   80   79
+CONECT   81   79   82   83   84
+CONECT   82   81
+CONECT   83   81
+CONECT   84   81   85
+CONECT   85   84
+CONECT   86   79   87  146
+CONECT   87   86   88   97
+CONECT   88   87   89   90   91
+CONECT   89   88
+CONECT   90   88
+CONECT   91   88   92   93   94
+CONECT   92   91
+CONECT   93   91
+CONECT   94   91   95   96   97
+CONECT   95   94
+CONECT   96   94
+CONECT   97   87   94   98   99
+CONECT   98   97
+CONECT   99   97  100  145
+CONECT  100   99  101  102
+CONECT  101  100
+CONECT  102  100  103  104  131
+CONECT  103  102
+CONECT  104  102  105  130
+CONECT  105  104  106  107
+CONECT  106  105
+CONECT  107  105  108  109  113
+CONECT  108  107
+CONECT  109  107  110  111
+CONECT  110  109
+CONECT  111  109  112
+CONECT  112  111
+CONECT  113  107  114  115  116
+CONECT  114  113
+CONECT  115  113
+CONECT  116  113  117  118  119
+CONECT  117  116
+CONECT  118  116
+CONECT  119  116  120  121  122
+CONECT  120  119
+CONECT  121  119
+CONECT  122  119  123
+CONECT  123  122  124  127
+CONECT  124  123  125  126  150
+CONECT  125  124
+CONECT  126  124
+CONECT  127  123  128  129
+CONECT  128  127
+CONECT  129  127
+CONECT  130  104
+CONECT  131  102  132  133  134
+CONECT  132  131
+CONECT  133  131
+CONECT  134  131  135  143
+CONECT  135  134  136  137
+CONECT  136  135
+CONECT  137  135  138  139
+CONECT  138  137
+CONECT  139  137  140  141
+CONECT  140  139
+CONECT  141  139  142  143
+CONECT  142  141
+CONECT  143  134  141  144
+CONECT  144  143
+CONECT  145   99
+CONECT  146   86
+CONECT  147   76
+CONECT  148   57
+CONECT  149   51
+CONECT  150  124
+CONECT  151   32
+END
