@@ -1,3 +1,5 @@
+import numpy as np
+
 def parameterLists(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,atomPSF,bonds,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList):
 	# Atoms: mass file [[atomName,m],...]
 	# LJparams: lj parameters file [[atomName,epusilon,sigma],...]
@@ -90,3 +92,23 @@ def parameterLists(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,at
 					flag=1
 		if(flag==0):
 			print("could not find "+str(dihedralType1)+ " aid1="+str(i[0])+" aid2="+str(i[1])+" aid3="+str(i[2])+" aid4="+str(i[3]))
+
+
+def setQEQfile(atomList,atomPSF):
+	# https://pubs.acs.org/doi/10.1021/j100161a070
+	H=np.array([4.528,13.890,0.0,0.0,0.0])
+	C=np.array([5.343,10.126,0.0,0.0,0.0])
+	N=np.array([6.899,11.760,0.0,0.0,0.0])
+	O=np.array([8.741,13.364,0.0,0.0,0.0])
+	f=open("../QWQ/param.qeq","w")
+	loop=1
+	for i in atomList:
+		if(i[0][0]=="h"):
+			f.write(str(loop)+" "+str(H[0])+" "+str(H[1])+" "+str(H[2])+" "+str(H[3])+" "+str(H[4])+"\n")
+		if(i[0][0]=="c"):
+			f.write(str(loop)+" "+str(C[0])+" "+str(C[1])+" "+str(C[2])+" "+str(C[3])+" "+str(C[4])+"\n")
+		if(i[0][0]=="n"):
+			f.write(str(loop)+" "+str(N[0])+" "+str(N[1])+" "+str(N[2])+" "+str(N[3])+" "+str(N[4])+"\n")
+		if(i[0][0]=="o"):
+			f.write(str(loop)+" "+str(O[0])+" "+str(O[1])+" "+str(O[2])+" "+str(O[3])+" "+str(O[4])+"\n")
+		loop+=1

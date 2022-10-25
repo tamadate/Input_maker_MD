@@ -4,11 +4,11 @@ import functions
 import output
 
 ##  Input parameters
-fileName="protein/angiotensinII+1"  # file name
+fileName="protein/bradykinin+2"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-outputName="test"
+outputName="bradykinin+2"
 chargeFile="/home/tama3rdgen/ChargeCalculation/angio1+/a.dump"
-chargeFile="net"
+QEQflag=1
 netCharge=2
 HDX_locations=np.array(["hn","ho"])
 
@@ -33,14 +33,14 @@ angles=[]
 dihedrals=[]
 reader.readPDBfile(atoms,fileName+".pdb")
 reader.readPSFfile(atomPSF,bonds,angles,dihedrals,fileName+".psf")
-if(chargeFile=="net"):
-    partialQ=netCharge/float(len(atoms))
-    for i in atomPSF:
-        i[1]=partialQ
+
+if(QEQflag):
+	partialQ=netCharge/float(len(atoms))
+	for i in atomPSF:
+		i[1]=partialQ
 else:
     if(chargeFile!="psf"):
         reader.readDumpFile(atomPSF,chargeFile)
-print(atomPSF)
 
 ##  Create each list
 atomList=[]
@@ -53,6 +53,8 @@ functions.parameterLists(Atoms,LJParams,bondParams,angleParams,dihedralParams,at
 output.outputMyInpute(Atoms,LJParams,bondParams,angleParams,dihedralParams,atoms,atomPSF,bonds,angles,dihedrals,atomList,LJList,bondList,angleList,dihedralList,L,outputName)
 if(np.size(HDX_locations)>0):
     output.outputLocationFile(atomPSF,HDX_locations,outputName)
+if(QEQflag):
+    functions.setQEQfile(atomList,atomPSF)
 
 
 print("**Done")
