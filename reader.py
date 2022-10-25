@@ -119,3 +119,4 @@ def readDumpFile(atomPSF,fileName):
 	for atom in atoms:
 		a=atom.split()
 		atomPSF[int(a[0])-1][1]=a[8]
+	

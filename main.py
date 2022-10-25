@@ -6,8 +6,10 @@ import output
 ##  Input parameters
 fileName="protein/angiotensinII+1"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
-outputName="angioII+1"
+outputName="test"
 chargeFile="/home/tama3rdgen/ChargeCalculation/angio1+/a.dump"
+chargeFile="net"
+netCharge=2
 HDX_locations=np.array(["hn","ho"])
 
 ##  Read potential file
@@ -31,8 +33,14 @@ angles=[]
 dihedrals=[]
 reader.readPDBfile(atoms,fileName+".pdb")
 reader.readPSFfile(atomPSF,bonds,angles,dihedrals,fileName+".psf")
-if(chargeFile!="psf"):
-    reader.readDumpFile(atomPSF,chargeFile)
+if(chargeFile=="net"):
+    partialQ=netCharge/float(len(atoms))
+    for i in atomPSF:
+        i[1]=partialQ
+else:
+    if(chargeFile!="psf"):
+        reader.readDumpFile(atomPSF,chargeFile)
+print(atomPSF)
 
 ##  Create each list
 atomList=[]
