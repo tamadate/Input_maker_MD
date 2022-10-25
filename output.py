@@ -91,4 +91,4 @@ def outputLocationFile(atomPSF,HDX_locations,fileName):
 			locs=np.where(aPSF.T[0]==locType)
 			for loc in locs:
 				for l in loc:
-					f.write(str(l)+"\n")
+					f.write(str(l+1)+"\n")
