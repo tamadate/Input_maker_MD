@@ -4,7 +4,7 @@ import functions
 import output
 
 ##  Input parameters
-fileName="protein/bradykinin+2"  # file name
+fileName="protein/bradykinin2+"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
 outputName="bradykinin+2"
 chargeFile="/home/tama3rdgen/ChargeCalculation/angio1+/a.dump"

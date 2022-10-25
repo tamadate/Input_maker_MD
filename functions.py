@@ -100,7 +100,7 @@ def setQEQfile(atomList,atomPSF):
 	C=np.array([5.343,10.126,0.0,0.0,0.0])
 	N=np.array([6.899,11.760,0.0,0.0,0.0])
 	O=np.array([8.741,13.364,0.0,0.0,0.0])
-	f=open("../QWQ/param.qeq","w")
+	f=open("QEQ/param.qeq","w")
 	loop=1
 	for i in atomList:
 		if(i[0][0]=="h"):
