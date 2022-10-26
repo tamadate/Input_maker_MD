@@ -7,8 +7,8 @@ import output
 fileName="protein/bradykinin2+"  # file name
 L=300.0000      # calculation domain size (only of lammps input)
 outputName="bradykinin+2"
-chargeFile="/home/tama3rdgen/ChargeCalculation/angio1+/a.dump"
-QEQflag=1
+chargeFile="/home/tama3rdgen/ChargeCalculation/bradykinin2+/a.dump"
+QEQflag=0
 netCharge=2
 HDX_locations=np.array(["hn","ho"])
 
